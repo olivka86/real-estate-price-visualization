@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Apartment Price Visulalization</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.0/css/bootstrap.min.css" integrity="sha256-/ykJw/wDxMa0AQhHDYfuMEwVb4JHMx9h4jD4XvHqVzU=" crossorigin="anonymous" />
+</head>
+
+<style>
+  #btn {
+      padding: 30px;
+  }
+
+  .container {
+    width: 100%;
+    text-align: center;
+    padding: 20%;
+  }
+</style>
+
+<body>
+  <div class="container">
+    <a class='btn btn-primary' id='btn' href="{{ url_for('msc') }}">Moscow</a>
+    <a class='btn btn-primary' id='btn' href="{{ url_for('spb') }}">Saint-Petersburg</a>
+    <a class='btn btn-primary' id='btn' href="{{ url_for('ekb') }}">Ekaterinburg</a>
+  </div>
+</body>
+</html>
